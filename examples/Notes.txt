@@ -19,8 +19,56 @@ io.COPY
 
 ----------------------------------------------------------------
 Slices break input for ram, as well as flexibility to process it in parts
+----------------------------------------------------------------
+hash takes a large number turns it small
+
+non-crypto hash not hard to go either direction.
+
+cryptographic is hard to go one direction
+
+----------------------------------------------------------------
+Hashes could be used to comare files
 
 
+
+----------------------------------------------------------------
+
+
+
+
+
+----------------------------------------------------------------
+
+
+
+
+
+
+
+----------------------------------------------------------------
+
+
+
+
+
+
+
+----------------------------------------------------------------
+
+
+
+
+
+Can embed interfaces in interfaces to access other methods
+
+
+
+----------------------------------------------------------------
+if a checksum chnages the file changes.
+
+
+or has changed
+  can use in fnv
 
 
 ----------------------------------------------------------------
@@ -45,8 +93,17 @@ strings.toUpper[0] is to capitalize first letter
 
 https://youtu.be/ptbe-2aBFJI?list=PLH0INGR--ZGSO9VleUTtimDj9blPrbYmM
 
+if line is emptu check if line is >0 then do shit like uppercase.
+
+
 ----------------------------------------------------------------
 
+
+io.copy is superior to readall
+
+
+
+io.COPY(os.Stdout, f) where f is the file
 
 
 ----------------------------------------------------------------
