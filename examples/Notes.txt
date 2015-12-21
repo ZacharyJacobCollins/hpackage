@@ -1,7 +1,55 @@
 Currently on Day 2 Video 1   -  8 mins in
 https://www.golang-book.com/guides/bootcamp
 
+
+Still need to go back and do Golang Bufio
+Golang Scanner
+
+Golang Bufio Scanner
+Golang String Replace
+Golange CSV
+
+
 ONly use pointers when you can't use anything else.
+----------------------------------------------------------------
+
+COPYING a file
+
+io.COPY
+
+----------------------------------------------------------------
+Slices break input for ram, as well as flexibility to process it in parts
+
+
+
+
+----------------------------------------------------------------
+BUFIO
+buffered writer writes many bytes at once instead of one at a time..   less expensive
+
+Use the scanner often in buff io
+
+scanner := bufio.NewScanner(srcFile
+for scanner.Scan() {
+	linne:=scanner.Text()
+	fmt.Println(line)
+
+}
+//scans and prints line by line
+
+/if need to interact w file line by line use a scanner.  
+
+strings.toUpper[1] is to capitalize second letter
+
+strings.toUpper[0] is to capitalize first letter
+
+https://youtu.be/ptbe-2aBFJI?list=PLH0INGR--ZGSO9VleUTtimDj9blPrbYmM
+
+----------------------------------------------------------------
+
+
+
+----------------------------------------------------------------
 
 
 MAP SYNTAX 
