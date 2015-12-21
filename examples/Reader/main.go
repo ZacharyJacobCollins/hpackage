@@ -1,23 +1,27 @@
+//Golang Cat replacement
+
 package main
 
 import (
-  "os"
-  "log"
   "fmt"
+  "io/ioutil"
+  "log"
+  "os"
 )
 
 func main()  {
-  f, err := os.Open("hello.txt")
+  //my-cat filename
+  //os.Args[0] == my-cat
+  //os.Args[1] == filename
+  f, err := os.Open(os.Args[1])
   if err != nil {
-    log.Fatalln("died")
+    log.Fatalln("died", err.Error())
   }
   defer f.Close()
-
-  bytes, err := ioutill.ReadAll(f)
-
+  bytes, err := ioutil.ReadAll(f)
   if err != nil {
     log.Fatalln("dead")
   }
-
-  fmt.Println(bytes)
+  str:=string(bytes)
+  fmt.Println(str)
 }
