@@ -264,13 +264,130 @@ in OS package
 if file is opened gotta close it.  defer file.Close()
 
 
+package main
+
+import (
+  "fmt"
+  "io/ioutil"
+  "log"
+  "os"
+)
+
+func main()  {
+  //my-cat filename
+  //os.Args[0] == my-cat
+  //os.Args[1] == filename
+  var file string
+  fmt.Scanf("%s", &file)
+
+
+  f, err := os.Open(file)
+  if err != nil {
+    log.Fatalln("died", err.Error())
+  }
+  defer f.Close()
+
+  bytes, err := ioutil.ReadAll(f)
+
+  if err != nil {
+    log.Fatalln("dead")
+  }
+
+  str:=string(bytes)
+
+  fmt.Println(str)
+}
+
+Queries for file
+
+
+
+
+
+
+
+Cat recreation
+
+
+----------------------------------------------------------------
+
+
+
+
+CREATE A FILE
+package main
+
+import (
+  "os"
+  "log"
+)
+
+func main() {
+  f, err := os.Create(os.Args[1])
+  if err != nil {
+    log.Fatalln("done", err.Error())
+  }
+  defer f.Close();
+
+  str:= "txt"
+  bs := []byte(str)
+
+  _, err = f.Write(bs)
+  if err != nil {
+    log.Fatalln("done", err.Error())
+  }
+
+}
+
+
+also can use os.mkdir
+
+
+os.Mkdir expects permissions
+
+
+ex
+
+err:= os.Mkdir("/anewfolder", 0x777)
+
 
 
 
 
 ----------------------------------------------------------------
 
-Golang Read
+READER  
+
+Can also use reader in strings package
+
+	
+
+package main
+
+import (
+  "fmt"
+  "io/ioutil"
+  "log"
+  "os"
+)
+
+func main()  {
+  f, err := os.Open("hello.txt")
+  if err != nil {
+    log.Fatalln("died", err.Error())
+  }
+  defer f.Close()
+
+  bytes, err := ioutil.ReadAll(f)
+
+  if err != nil {
+    log.Fatalln("dead")
+  }
+
+  str:=string(bytes)
+
+  fmt.Println(str)
+}
 
 
 
