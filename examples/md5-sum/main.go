@@ -1,4 +1,4 @@
-
+//Computes md5 hash for a file
 package main
 
 

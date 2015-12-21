@@ -32,7 +32,22 @@ Hashes could be used to comare files
 
 
 ----------------------------------------------------------------
+s crypt and decrypt run sha lots and lots of times.  slows stuff down to limit things
 
+
+
+
+----------------------------------------------------------------
+Callback is a function called by a function
+
+
+----------------------------------------------------------------
+
+
+
+----------------------------------------------------------------
+
+----------------------------------------------------------------
 
 
 
@@ -85,7 +100,7 @@ for scanner.Scan() {
 }
 //scans and prints line by line
 
-/if need to interact w file line by line use a scanner.  
+/if need to interact w file line by line use a scanner.
 
 strings.toUpper[1] is to capitalize second letter
 
@@ -109,7 +124,7 @@ io.COPY(os.Stdout, f) where f is the file
 ----------------------------------------------------------------
 
 
-MAP SYNTAX 
+MAP SYNTAX
 ----------------------------------------------------------------
   elements := make(map[string]string)
   elements["H"] = "Hydrogen"
@@ -151,6 +166,32 @@ func main() {
 
       fmt.Println(c, boobs[c])
     }
+
+
+
+----------------------------------------------------------------
+
+
+md5 and sha1 are both not secure
+
+
+
+
+----------------------------------------------------------------
+
+
+
+golang walk
+----------------------------------------------------------------
+
+
+
+
+use sha256 and that is secure
+
+have to slow hashing down to make it secure.
+
+
 
 
 
@@ -248,7 +289,7 @@ func (p *Person) Talk() {
 }
 
 func (p *Person) Location() {
-    fmt.Println("I’m at", p.Address.Number, p.Address.Street, p.Address.City, p.Address.State, p.Address.Zip)
+    fmt.Println("Iï¿½m at", p.Address.Number, p.Address.Street, p.Address.City, p.Address.State, p.Address.Zip)
 }
 
 func main() {
@@ -272,7 +313,7 @@ func main() {
 
 
 ----------------------------------------------------------------
-To generate an html file do 
+To generate an html file do
 
 profile-maker > index.html
 
@@ -282,7 +323,7 @@ profile-maker > index.html
 
 ----------------------------------------------------------------
 New vs Make
- 
+
 
 ----------------------------------------------------------------
 hex/encode package
@@ -297,12 +338,12 @@ h.Sum(nil) will give you bytes need to turn it into hex
 POINTERS/REFERENCES
  How do you get the memory address of a variable?
 
-How to assign 
+How to assign
 
 Pass by reference vs pass by copy
 
 
-Pointers take the address, and pass it in 
+Pointers take the address, and pass it in
 
 
 ML for notes?
@@ -327,14 +368,14 @@ func main()  {
 First print out would be hex address space
 
 
-*&x would reference and then dereference a pointer.  They cancel.  
+*&x would reference and then dereference a pointer.  They cancel.
 
 
 
 Advantages come when instead of making  a copy of something that has a lot of data you can just reference that memory block
- 
 
-to access the index 
+
+to access the index
 
 
 *x is the value of the pointer
@@ -353,7 +394,7 @@ new creates a new pointer to something.
 ----------------------------------------------------------------
 OOP
 
-  
+
 
 
 
@@ -461,11 +502,11 @@ err:= os.Mkdir("/anewfolder", 0x777)
 
 ----------------------------------------------------------------
 
-READER  
+READER
 
 Can also use reader in strings package
 
-	
+
 
 package main
 
@@ -532,7 +573,7 @@ Data over a network is typical to come in as a slice of bytes
 
 
 
-MAPS 
+MAPS
 
 key value pairs
 
