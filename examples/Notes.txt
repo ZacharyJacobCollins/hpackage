@@ -1,6 +1,71 @@
 Currently on Day 2 Video 1   -  8 mins in
 https://www.golang-book.com/guides/bootcamp
 
+everything before day 3 really
+
+
+
+Tumblr golang examples
+http://golang-examples.tumblr.com/post/43135765795/simple-file-server
+
+
+
+do all of week 2
+
+----------------------------------------------------------------
+
+Huge part of software dev is learning how to read code
+
+----------------------------------------------------------------
+
+eplonential retry i increasing wait time till retry exponentially
+----------------------------------------------------------------
+
+
+
+
+
+addr = ":http"  is the default port 80
+
+
+
+----------------------------------------------------------------
+
+
+heart of go is a for loop
+
+
+----------------------------------------------------------------
+
+
+
+
+
+----------------------------------------------------------------
+gobindata can be used to have all the files or whatever
+
+----------------------------------------------------------------
+
+
+image files are just giant color thins really, giant so larger than text
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
+http://blog.golang.org/concurrency-is-not-parallelism
+
+go bindata
 
 Still need to go back and do Golang Bufio
 Golang Scanner
@@ -12,7 +77,29 @@ Golange CSV
 
 ONly use pointers when you can't use anything else.
 ----------------------------------------------------------------
+Channels have a type
 
+func stuff (thisvarisachan chan string) {
+
+
+}
+
+
+
+
+multiplexer is just the route config
+
+
+To just send a file, use
+
+
+ http.Servefile
+
+
+
+
+
+----------------------------------------------------------------
 COPYING a file
 
 io.COPY
@@ -30,19 +117,27 @@ cryptographic is hard to go one direction
 Hashes could be used to comare files
 
 
+go makes it easy to ensure correctness
+
 
 ----------------------------------------------------------------
 s crypt and decrypt run sha lots and lots of times.  slows stuff down to limit things
 
 
 
-
+http://blog.golang.org/concurrency-is-not-parallelism
 ----------------------------------------------------------------
 Callback is a function called by a function
 
 
 ----------------------------------------------------------------
+concurrency in go is handled with go keyword
 
+so can just call function called conncurrent (num int)
+
+like go concurrent(0)
+
+that easy
 
 
 ----------------------------------------------------------------
@@ -201,7 +296,7 @@ Functions
 
 to return two can do h, even := half(2)
 
-http://www.xvideos.com/profiles/marcel_hoskins#_tabVideos,videos-best
+
 
 
 Callbacks are like
