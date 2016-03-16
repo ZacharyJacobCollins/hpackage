@@ -9,23 +9,24 @@ import (
 	"net/http"
 )
 
-type User struct {
-	Id           uint32 `json:"id"`
-	Username     string `json:"username"`
-	MoneyBalance uint32 `json:"balance"`
+//keypairs like ---  {"username": "dennis", "balance": 200}
+
+type InputUser struct {
+	Name	     string `json:"name"`
+	Number	     string `json:"number"`
 }
 
-type UserParams struct {
-	Username     string `json:"username"`
-	MoneyBalance uint32 `json:"balance"`
+type StoredUser struct {
+	Id           uint32 `json:"id"`
+	Name 	     string `json:"name"`
+	Number	     string `json:"number"`
 }
 
 var userIdCounter uint32 = 0
-
-var userStore = []User{}
+var userStore = []StoredUser{}
 
 func createUserHandler(w http.ResponseWriter, r *http.Request) {
-	p := UserParams{}
+	p := StoredUser{}
 
 	body, err := ioutil.ReadAll(r.Body)
 	if err != nil {
@@ -41,7 +42,7 @@ func createUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = validateUniqueness(p.Username)
+	err = validateUniqueness(p.Name)
 
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)
@@ -49,10 +50,10 @@ func createUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	u := User{
-		Id:           userIdCounter,
-		Username:     p.Username,
-		MoneyBalance: p.MoneyBalance,
+	u := StoredUser{
+		Id:           	userIdCounter,
+		Name:     	p.Name,
+		Number: 	p.Number,
 	}
 
 	userStore = append(userStore, u)
@@ -64,7 +65,7 @@ func createUserHandler(w http.ResponseWriter, r *http.Request) {
 
 func validateUniqueness(username string) error {
 	for _, u := range userStore {
-		if u.Username == username {
+		if u.Name == username {
 			return errors.New("Username is already used")
 		}
 	}
@@ -85,10 +86,7 @@ func listUsersHandler(w http.ResponseWriter, r *http.Request) {
 
 func Handlers() *mux.Router {
 	r := mux.NewRouter()
-
 	r.HandleFunc("/users", createUserHandler).Methods("POST")
-
 	r.HandleFunc("/users", listUsersHandler).Methods("GET")
-
 	return r
 }
