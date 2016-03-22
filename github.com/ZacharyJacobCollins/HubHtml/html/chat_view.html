@@ -24,7 +24,7 @@
              var conn;
              var msg = $("#msg");
              var chat = $("#chat");
-             var username = "zac";
+             var image = "https://cdn0.iconfinder.com/data/icons/flatico/512/monitor_code__editor-512.png"
 
              function appendChat(msg) {
                  var d = chat[0]
@@ -42,7 +42,7 @@
                 //add in time .now jquery func here.
 
                 var msgRt = $("<div class=\"chat-message right\">");
-                var imgDiv = $("<img class=\"message-avatar\" src=\"\" alt=\"An image of the user!\">");
+                var imgDiv = $("<img class=\"message-avatar\" src=\""+image+"\" alt=\"An image of the user!\">");
                 var msgDiv        = $("<div class=\"message\">");
                 var authorLink    = $("<a class=\"message-author\" href=\"#\">");
                 var dateSpan      = $("<span class=\"message-date\">");
