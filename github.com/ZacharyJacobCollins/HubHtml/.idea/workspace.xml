@@ -11,7 +11,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../facebooklogin" afterPath="$PROJECT_DIR$/../facebooklogin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../go-jwt-middleware" afterPath="$PROJECT_DIR$/../go-jwt-middleware" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../golang-jwt-authentication-api-sample" afterPath="$PROJECT_DIR$/../golang-jwt-authentication-api-sample" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HubHtml.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.814815">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding>
                 <element signature="e#14#159#0" expanded="true" />
               </folding>
@@ -47,8 +46,8 @@
       <file leaf-file-name="chatAPI.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat/chatAPI.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39273927">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.81353134">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="e#14#71#0" expanded="true" />
               </folding>
@@ -69,7 +68,7 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.018182">
+            <state vertical-scroll-proportion="-3.5272727">
               <caret line="31" column="22" selection-start-line="30" selection-start-column="44" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/chat_view.html" />
         <option value="$PROJECT_DIR$/html/login.html" />
-        <option value="$PROJECT_DIR$/chat/chatAPI.go" />
         <option value="$PROJECT_DIR$/html/main.go" />
+        <option value="$PROJECT_DIR$/chat/chatAPI.go" />
       </list>
     </option>
   </component>
@@ -578,28 +577,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.018182">
-          <caret line="31" column="22" selection-start-line="30" selection-start-column="44" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.814815">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
             <element signature="e#14#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5272727">
+          <caret line="31" column="22" selection-start-line="30" selection-start-column="44" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chat/chatAPI.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39273927">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.81353134">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="e#14#71#0" expanded="true" />
           </folding>

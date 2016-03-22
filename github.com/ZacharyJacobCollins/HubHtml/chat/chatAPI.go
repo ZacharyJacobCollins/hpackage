@@ -24,10 +24,10 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello astaxie!") // write data to response
 }
 
-func login(w http.ResponseWriter, r *http.Request) {
+func Login(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("method:", r.Method) //get request method
 	if r.Method == "GET" {
-		t, _ := template.ParseFiles("login.html")
+		t, _ := template.ParseFiles("html/login.html")
 		t.Execute(w, nil)
 	} else {
 		r.ParseForm()
